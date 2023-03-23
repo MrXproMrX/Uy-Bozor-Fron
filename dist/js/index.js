@@ -28,3 +28,18 @@ $(function(){
 });
 
 // -------------------------------===========-------------------------------
+
+$(document).ready(function(){
+	const header = document.querySelector('header');
+	window.onscroll=()=>{
+		if (window.pageYOffset > 80) {
+			header.classList.add('header__active');
+			$('.header__active').fadeTo(1000,1);
+		} else{
+			header.classList.remove('header__active');
+			$('.header__active').fadeTo(1000,1);
+		}
+	}
+});
+
+// -------------------------------===========-------------------------------
