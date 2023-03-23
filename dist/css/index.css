@@ -73,7 +73,7 @@
   src: url("../fonts/RobotoSlab-Black.ttf") format("truetype");
   font-weight: 900;
 }
-.footer__icons__link, .slider__list li, .categoriesIn__link, .categoriesIn__gallery .slick-next::after, .categoriesIn__gallery .slick-next, .categoriesIn__gallery .slick-prev::after, .categoriesIn__gallery .slick-prev, .categories__filter__link {
+.footer__icons__link, .slider__list li, .categoriesIn__link, .categoriesIn__gallery .slick-next::after, .categoriesIn__gallery .slick-prev::after, .categories__filter__link {
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -316,17 +316,23 @@ label {
 }
 .categoriesIn__gallery .slick-prev {
   background-color: transparent;
-  width: 40px;
-  height: 40px;
+  width: 16px;
+  height: 34px;
   position: absolute;
   bottom: 40px;
-  left: 40px;
+  left: 50%;
   z-index: 100;
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
+  transform: translate(-50%, 0px);
+  -webkit-transform: translate(-50%, 0px);
+  -moz-transform: translate(-50%, 0px);
+  -ms-transform: translate(-50%, 0px);
+  -o-transform: translate(-50%, 0px);
+  margin-left: -40px;
 }
 .categoriesIn__gallery .slick-prev::after {
   content: "";
@@ -346,17 +352,23 @@ label {
 }
 .categoriesIn__gallery .slick-next {
   background-color: transparent;
-  width: 40px;
-  height: 40px;
+  width: 16px;
+  height: 34px;
   position: absolute;
   bottom: 40px;
-  right: 40px;
+  right: 50%;
   z-index: 100;
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
+  transform: translate(-50%, 0px);
+  -webkit-transform: translate(-50%, 0px);
+  -moz-transform: translate(-50%, 0px);
+  -ms-transform: translate(-50%, 0px);
+  -o-transform: translate(-50%, 0px);
+  margin-right: -40px;
 }
 .categoriesIn__gallery .slick-next::after {
   content: "";
@@ -603,11 +615,9 @@ label {
   }
   .categoriesIn__gallery .slick-next {
     bottom: 15px;
-    right: 15px;
   }
   .categoriesIn__gallery .slick-prev {
     bottom: 15px;
-    left: 15px;
   }
   .categoriesIn__title__h2 {
     font-size: 28px;
@@ -720,7 +730,7 @@ h1, h2 {
 }
 .header__logo {
   width: 100%;
-  height: 50px;
+  height: -webkit-fill-available;
 }
 .header__logo img {
   width: 100%;
@@ -808,6 +818,21 @@ h1, h2 {
   color: #0D2668;
   line-height: 100%;
   text-transform: uppercase;
+}
+.header__link__button {
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFFFFF;
+  line-height: 130%;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  background-color: #0D2668;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
 }
 .header__burger__none {
   font-size: 18px;
@@ -1162,15 +1187,15 @@ h1, h2 {
 
 @media (max-width: 1440px) {
   .header__cart,
-  .slider__cart,
-  .premiumAds__cart,
-  .footer__cart,
-  .footer__bottom__list,
-  .slider__list .slick-dots,
-  .categoriesTop__cart,
-  .categories__cart,
-  .categoriesIn__cart,
-  .about__cart {
+.slider__cart,
+.premiumAds__cart,
+.footer__cart,
+.footer__bottom__list,
+.slider__list .slick-dots,
+.categoriesTop__cart,
+.categories__cart,
+.categoriesIn__cart,
+.about__cart {
     margin-left: 60px;
     margin-right: 60px;
   }
@@ -1208,16 +1233,16 @@ h1, h2 {
     max-height: 82px;
   }
   .premiumAds,
-  .footer__list,
-  .categoriesTop {
+.footer__list,
+.categoriesTop {
     padding: 40px 0;
   }
   .premiumAds,
-  .latestAnnouncements,
-  .categoriesTop,
-  .categories,
-  .categoriesIn,
-  .about {
+.latestAnnouncements,
+.categoriesTop,
+.categories,
+.categoriesIn,
+.about {
     margin-bottom: 40px;
   }
 }
@@ -1242,7 +1267,7 @@ h1, h2 {
     margin-bottom: 20px;
   }
   .premiumAds__text,
-  .premiumAds__money {
+.premiumAds__money {
     padding: 0 20px;
   }
   .premiumAds__img {
@@ -1332,29 +1357,32 @@ h1, h2 {
 }
 @media (max-width: 650px) {
   .header__cart,
-  .slider__cart,
-  .premiumAds__cart,
-  .footer__cart,
-  .footer__bottom__list,
-  .slider__list .slick-dots,
-  .categoriesTop__cart,
-  .categories__cart,
-  .categoriesIn__cart,
-  .about__cart {
+.slider__cart,
+.premiumAds__cart,
+.footer__cart,
+.footer__bottom__list,
+.slider__list .slick-dots,
+.categoriesTop__cart,
+.categories__cart,
+.categoriesIn__cart,
+.about__cart {
     margin-left: 30px;
     margin-right: 30px;
   }
   .premiumAds,
-  .footer__list,
-  .categoriesTop {
+.footer__list,
+.categoriesTop {
     padding: 30px 0;
   }
+  .header__link__button {
+    padding: 12px;
+  }
   .premiumAds,
-  .latestAnnouncements,
-  .categories,
-  .categoriesTop,
-  .categoriesIn,
-  .about {
+.latestAnnouncements,
+.categories,
+.categoriesTop,
+.categoriesIn,
+.about {
     margin-bottom: 30px;
   }
   .premiumAds__list {

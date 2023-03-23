@@ -216,18 +216,23 @@
 
         .slick-prev{
             background-color:transparent;
-            width: 40px;
-            height: 40px;
+            width: 16px;
+            height: 34px;
             position: absolute;
             bottom: 40px;
-            left: 40px;
+            left: 50%;
             z-index: 100;
             border-radius: 30px;
             -webkit-border-radius: 30px;
             -moz-border-radius: 30px;
             -ms-border-radius: 30px;
             -o-border-radius: 30px;
-            @extend%transition;
+            transform: translate(-50%,0px);
+            -webkit-transform: translate(-50%,0px);
+            -moz-transform: translate(-50%,0px);
+            -ms-transform: translate(-50%,0px);
+            -o-transform: translate(-50%,0px);
+            margin-left: -40px;
             &::after{
                 content: "";
                 background-image: url("data:image/svg+xml,%3Csvg width='21' height='38' viewBox='0 0 21 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19 2L2 19L19 36' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
@@ -252,18 +257,23 @@
 
         .slick-next{
             background-color:transparent;
-            width: 40px;
-            height: 40px;
+            width: 16px;
+            height: 34px;
             position: absolute;
             bottom: 40px;
-            right: 40px;
+            right: 50%;
             z-index: 100;
             border-radius: 30px;
             -webkit-border-radius: 30px;
             -moz-border-radius: 30px;
             -ms-border-radius: 30px;
             -o-border-radius: 30px;
-            @extend%transition;
+            transform: translate(-50%,0px);
+            -webkit-transform: translate(-50%,0px);
+            -moz-transform: translate(-50%,0px);
+            -ms-transform: translate(-50%,0px);
+            -o-transform: translate(-50%,0px);
+            margin-right: -40px;
             &::after{
                 content: "";
                 background-image: url("data:image/svg+xml,%3Csvg width='21' height='38' viewBox='0 0 21 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 2L19 19L2 36' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
@@ -555,12 +565,10 @@
 
     .categoriesIn__gallery .slick-next {
         bottom: 15px;
-        right: 15px;
     }
 
     .categoriesIn__gallery .slick-prev{
         bottom: 15px;
-        left: 15px;
     }
 
     .categoriesIn__title__h2 {
